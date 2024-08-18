@@ -25,9 +25,9 @@ x-rapidapi-key: <ASK_FOR_KEY>
 #### Params
 
 ```
-s - search query
-r - response format 
-page (optional) - page number
+`s=` - search query
+`r=` - response format (default value: `json`)
+`page=` (optional) - page number (default value: `1`)
 ```
 
 #### Example
@@ -92,7 +92,7 @@ https://movie-database-alternative.p.rapidapi.com/?s=Avengers%20Endgame&r=json&p
 #### Params
 
 ```
-i - A valid IMDb ID
+`i=` - A valid IMDb ID
 ```
 
 #### Example
