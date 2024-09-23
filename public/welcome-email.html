@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Email Template</title>
+    <style type="text/css">
+        /* General Styles */
+        body,
+        table,
+        td,
+        a {
+            text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        p {
+            margin: 0;
+            color: #000;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.2px;
+        }
+
+        /* csslint ignore:start */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* csslint ignore:end */
+        .header-row {
+            display: flex;
+            background-color: #EEEFF6;
+            width: 100%;
+            height: 63px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-row {
+            display: flex;
+            width: 100%;
+        }
+
+        .welcome-row-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 24px;
+            /* padding-bottom: 40px; */
+        }
+
+        .welcome-text-container {
+            padding-left: 68px;
+            align-self: flex-start;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .welcome-text-container p {
+            font-size: 29px;
+            font-weight: 700;
+            line-height: normal;
+            color: #0F0552;
+        }
+
+        .main-text-container {
+            padding-left: 68px;
+            padding-right: 47px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 24px;
+        }
+
+        .subscriber-email {
+            font-weight: 700;
+            color: #060222;
+            margin-top: 8px;
+            margin-bottom: 16px !important;
+        }
+
+        .vertical-margin-4 {
+            margin-top: 4px;
+        }
+
+        .vertical-margin-16 {
+            margin-top: 16px;
+        }
+
+        .padding-box {
+            padding: 0px 68px;
+        }
+
+        .best-regards-container {
+            padding-left: 68px;
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+
+        .best-regards-qubic {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+        }
+
+        .footer-row {
+            display: flex;
+            background-color: #EEEFF6;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-container {
+            display: flex;
+            padding: 16px 30px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-container p {
+            margin-top: 8px;
+            font-size: 10px;
+        }
+
+        .footer-container a {
+            text-decoration-line: underline;
+            color: #735FF6;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 660px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .center-on-mobile {
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #ffffff;">
+    <table cellpadding="0" cellspacing="0" width="100%" style="max-width: 660px; margin: auto;" class="email-container">
+        <tr class="header-row">
+            <td class="header-container">
+                <a href="https://mitiga.cloud" target="_blank" style="display: inline-block;">
+                    <img src="https://mitiga-public.s3.amazonaws.com/pictures/Mitiga_logo_purple-notagline.png"
+                        alt="Mitiga Logo" style="width: 156px; border: 0; outline: none; text-decoration: none;">
+                </a>
+            </td>
+        </tr>
+        <tr class="welcome-row">
+            <td class="welcome-row-container">
+                <div class="welcome-text-container">
+                    <p>Welcome to the Mitiga platform</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="598" height="2" viewBox="0 0 598 2" fill="none">
+                    <path d="M1 1H597" stroke="#EAECFB" stroke-linecap="round" />
+                </svg>
+            </td>
+        </tr>
+        <tr class="welcome-row">
+            <td class="welcome-row-container">
+                <div class="main-text-container">
+                    <p>Hello,</p>
+                    <div class="vertical-margin-4"></div>
+                    <p>You are receiving this email because the following address has been subscribed to receive threat
+                        detection alerts from the Mitiga platform:</p>
+                    <p class=subscriber-email>Distribution.mail@kaizen.io</p>
+                    <p>From now on, you will receive alerts based on the configuration selected for the email address.
+                    </p>
+                </div>
+                <div class="vertical-margin-16"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="598" height="2" viewBox="0 0 598 2" fill="none">
+                    <path d="M1 1H597" stroke="#EAECFB" stroke-linecap="round" />
+                </svg>
+            </td>
+        </tr>
+        <tr class="best-regards-row">
+            <td class="best-regards-container">
+                <p>Please let us know if you have any questions.</p>
+                <div class="best-regards-qubic">
+                    <p>Best regards,</p>
+                    <p>The Mitiga Team</p>
+                    <a href="https://mitiga.cloud" target="_blank">Mitiga.io</a>
+                </div>
+            </td>
+        </tr>
+        <tr class="footer-row">
+            <td class="footer-container">
+                <p>If needed, please contact test@kaizen.io <a href="emailto:test@kaizen.io"
+                        target="_blank">notification settings page</a> to assist you with unsubscribing from the
+                    distribution list.</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
